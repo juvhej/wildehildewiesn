@@ -1,0 +1,132 @@
+
+
+body{
+    /*background-color: dodgerblue; 
+    background: linear-gradient(35deg, red, yellow);*/ 
+    font-family:cursive;
+    padding: 10px;
+    background:linear-gradient(90deg, white, dodgerblue);
+}
+*{box-sizing: border-box;
+}
+.h1{
+    font-family: cursive;    /*change*/
+}
+.header{
+    /*grid-area:header;*/
+    padding: 30px;
+    text-align: center;  
+    color:dodgerblue; 
+    font-family:cursive;
+   }
+
+ 
+/*.grid-container{
+    display: grid;
+    grid-template-areas:'header header header header header header'
+        'left left middle middle right right'
+        'footer footer footer footer footer footer';
+    grid-column-gap: 50px;    
+}
+.left,
+.middle,
+.right{
+    padding: 30px;
+}
+
+.left{
+    grid-area: left;
+}
+.middle{
+    grid-area: middle;
+}
+
+.right{
+    grid-area: right;
+}*/
+   h2{
+     font-family: cursive;
+       font-weight:300;
+     color: aliceblue;  
+   }
+h3{
+    color:deepskyblue;
+    font-family: cursive;
+}
+h4{
+    font-family: cursive;
+}
+h6{
+    font-family: cursive;
+    color:aliceblue;
+}
+p{
+    color:navy;
+}
+   img{
+    width:100%; 
+   }
+.column{
+    float: left;
+    width: 100%;
+    padding: 20px;
+}
+.row:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+   .footer {
+    /*grid-area: footer;*/   
+    padding: 10px;   
+    margin-top: 80px; 
+    text-align: center;
+    /*--background-color: antiquewhite-->*/
+    position:relative;
+    top:450px;
+  }
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+/*@media (max-width: 600px){
+    .grid-container {
+        grid-template-areas: 
+            'header header header header header header'
+            'left left left left left left'
+            'middle middle middle middle middle middle'
+            'right right right right right right'
+            'footer footer footer footer footer footer'
+            
+    }
+}*/
+    
+
+@media screen and (max-width:400px) {
+    .flipbox {
+        flex-direction: column;
+    } 
+}
+button {
+    /*float:right;
+    position:absolute;*/
+    width: inherit;
+    font-family:cursive;
+    background-color: dodgerblue;
+    color:aliceblue;
+}
+
+#buttonlooks {
+    font-size: 24px;
+    border-radius: 95%;
+    margin:auto;
+}
+img{
+    border-radius:8px;
+    opacity: 0.9;
+    filter: alpha(opacity=90);
+}

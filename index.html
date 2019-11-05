@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Wilde Hilde</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="theme-color" content="blue"/>
+    <script src="WildeHilde.js"></script> 
+<head>
+  <title>Wilde Hilde</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+      <script src="https://ajax.gocogleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link href="WildeHildestyles.css" rel="stylesheet" type="text/css">   <link rel="manifest" href="/manifest.json">
+<script src="WildeHilde.js"></script>    
+<script src="service-worker.js"></script>
+<link rel="manifest" href="manifest.json" />
+<script async src="https://cdn.jsdelivr.net/npm/pwacompat@2.0.9/pwacompat.min.js"
+    integrity="sha384-VcI6S+HIsE80FVM1jgbd6WDFhzKYA0PecD/LcIyMQpT4fMJdijBh0I7Iblaacawc"
+    crossorigin="anonymous"></script>
+</head>
+ <body>  
+       
+ <div class="header">
+     <h1>Blend in like a local</h1>
+     <h2>Call it Wiesn & Brezn!</h2> 
+      <img src="images/brexn3.jpg" alt="picture of a Brezn"><img>
+     <h6>Learn some sounds to make your Bavarian smile</h6>
+    </div>
+    
+                <div class= row>
+                <div class= "column">
+                       <h3>Wiesn</h3>
+                <button id="buttonlooks" type="button" onclick="basicsAudio()">basics</button> 
+                    </div>
+     
+     <div class= "column">
+                       <h3>Wiesn</h3>
+                <button id="buttonlooks" type="button" onclick="fooddrinksAudio()">food & drinks</button> 
+                    </div>
+     
+                        
+     <div class= row>
+                <div class= "column">
+                       <h3>Wiesn</h3>
+                <button id="buttonlooks" type="button" onclick="loveAudio()">charmer</button> 
+                    </div></div>
+
+                    <div class= row>
+                        <div class="column">
+                                  <h3>Wiesn</h3>
+                       <button id="buttonlooks" type="button" onclick="exclamationsAudio()">talks</button>
+                            </div></div>  
+
+     <div class= "column">
+                       <h3>Wiesn</h3>
+                <button id="buttonlooks" type="button" onclick="swearwordsAudio()">grantler*</button> 
+                    </div>
+                    <p>*<b>BEWARE</b> perfectly fine to use with your Bavarians, but might be too rude for all other humans.</p>
+   
+         
+   <div class= "footer"> 
+    <h6><a href="https://github.com/juvhej">©Juvhej 2019</a></h6>
+    <h6>dedicated to my grandmother ❤️ thinking of you.</h6>
+     </div>
+
+    
+</div>
+<script>
+    if ('serviceWorker' in navigator) 
+        {
+          window.addEventListener('load', () => {
+          navigator.serviceWorker.register('./service-worker.js')
+          .then(() => { console.log("[ PWA Fire Bundle ] Service Worker Registered"); });
+        } ); 
+      }  
+      </script>
+</body>
+</html>
